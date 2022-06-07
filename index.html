@@ -8,13 +8,10 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
     integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
     crossorigin=""/>
-    <script src="app.js" defer></script>
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-   crossorigin=""></script>
+    
     <style>
     #map { 
-        height: 400px;
+        height: 1000px;
         background-color: #ccc;
     }
     #map::before{
@@ -28,6 +25,13 @@
     .leaflet-popup-content-wrapper {
         width: 100%;
     }
+    p {
+        font-size: 16px;
+        color: green
+    }
+    #submit{
+        background-color: pink;
+    }
   </style>
 </head>
 <body>
@@ -35,11 +39,18 @@
         <select id="business">
             <option value="restaurant">Restaurants</option>
             <option value="coffee">Coffee Shops</option>
-            <option value="hotel">Hotels</option>
+            <option value="hotel">Hotels</option>  
             <option value="market">Markets</option>
+            <option value="movie">Movie Theater</option>
+            <option value="comic">Comic Books</option>
+            <option value="pool">Pools</option>
         </select>
-        <button id="submit">Submit</button>
+        <button id="submit">see business results</button>
     </form>
     <div id="map"></div>
+    <script src="app.js" defer></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
 </body>
 </html>
